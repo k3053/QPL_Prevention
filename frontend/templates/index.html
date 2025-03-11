@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flask Frontend</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Flask Frontend</h1>
+
+    <form action="/" method="POST">
+        <label for="user_input">Enter a Value:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if value %}
+        <h2>You entered: {{ value }}</h2>
+    {% endif %}
+</body>
+</html>

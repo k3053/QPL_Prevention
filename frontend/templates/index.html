@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart Contract Interaction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Inteaction with Smart Contract</h1>
+
+    <form method="POST">
+        <label for="user_input">Enter a Value to Set:</label>
+        <input type="text" id="user_input" name="user_input">
+        <br><br>
+        <!-- Set fuunction button -->
+        <button type="submit" name="set_button">Set Value</button>
+        <br><br>
+        <!-- Get function button -->
+        <button type="submit" name="get_button">Get Value</button>
+    </form>
+<!-- 
+    {% if value %} -->
+        <h2>Stored Value from Contract: {{ value }}</h2>
+    <!-- {% endif %} -->
+</body>
+</html>
